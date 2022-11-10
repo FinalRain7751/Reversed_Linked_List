@@ -7,6 +7,12 @@ node *rev_ll(node *list, node *tmp1, node *tmp2);
 
 node *reverse(node *list)
 {
+    // If list null
+    if (list == NULL)
+    {
+        return list;
+    }
+    
     // If only one item in list
     node *tmp1 = list->next;
     if (tmp1 == NULL)
